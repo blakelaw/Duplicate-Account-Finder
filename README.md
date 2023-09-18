@@ -48,8 +48,10 @@ This project investigates several methods of detecting users operating multiple 
 
 **Sample Calculation**: Running `process_linkage(C1, LB1).head(15)` in `Dendrogram.py` yields the following table. It has been annotated to denote known alternate accounts:
 
-<iframe title="Sample Calculation for Word Frequency" aria-label="Table" id="datawrapper-chart-UNDoy" src="https://datawrapper.dwcdn.net/UNDoy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="705" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
+![Description of Image](https://i.imgur.com/cVQpAMN.png)
+
+In this chart, blue represents a match, while orange represents no evidence of a match. Note that when it matches users with the same exact name (e.g. BlueDot and BlueDot), these are not the same account. This occurred because the user made a new account and had similar word frequencies to their previous. Thus, the lower bound for accuracy in this method is $\frac{14}{15} = 93%$. However, it is possible that Xzplorer is indeed Heebs13, and the accuracy is even higher than we expected.
+
 
 
 ## Usage
