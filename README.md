@@ -1,4 +1,4 @@
-# NLP-Driven Identification of Similar Accounts 
+# NLP-Driven Identification of Duplicate Accounts 
 
 
 
