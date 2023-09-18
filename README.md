@@ -108,7 +108,7 @@ This project investigates several methods of detecting users operating multiple 
 
 
 
-In this chart, blue represents a match, while orange represents no evidence of a match. Note that when it matches users with the same exact name (e.g. BlueDot and BlueDot), these are not the same account. This occurred because the user made a new account and had similar word frequencies to their previous. Thus, the lower bound for accuracy in this method is $\frac{14}{15} = 93\%$. However, it is possible that Xzplorer is indeed Heebs13, and the accuracy is even higher than we expected.
+In this chart, blue represents a match, while orange represents no evidence of a match. Note that when it matches users with the same exact name (e.g. BlueDot and BlueDot), these are not the same account. This occurred because the user made a new account and had similar word frequencies to their previous. Thus, the lower bound for accuracy in this method is $\frac{14}{15}$ = 93%. However, it is possible that Xzplorer is indeed Heebs13, and the accuracy is even higher than we expected.
 
 
 **Sample Visualizations**
