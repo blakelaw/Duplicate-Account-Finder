@@ -15,7 +15,7 @@ This project investigates several methods of detecting users operating multiple 
 
 - **Visualization**: Created dendrograms for each hierarchical clustering method. Check the `Dendrograms` folder for each. (Note: It may be difficult to see eacha image on a brwoser, as the files are very large. I recommend using GIMP or some other photo-editing software)
 
-- **Results**: 
+## Results 
 
 <table>
   <tr>
@@ -44,11 +44,13 @@ This project investigates several methods of detecting users operating multiple 
 </table>
 
 
-
-
-
-
 <sup>1</sup> - lower bound of the true positive identification rate, taken by obtaining the top 15 closest points in each clustering, and identifying the proportion of the matches that are known duplicate accounts. The accuracy could be even higher if it was later revealed a match was the same person.
+
+**Sample Calculation**: Running `process_linkage(C1, LB1).head(15)` in `Dendrogram.py` yields the following table. It has been annotated to denote known alternate accounts:
+
+<iframe title="Sample Calculation for Word Frequency" aria-label="Table" id="datawrapper-chart-UNDoy" src="https://datawrapper.dwcdn.net/UNDoy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="705" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
 
 ## Usage
 
