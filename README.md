@@ -116,7 +116,7 @@ In this chart, blue represents a match, while orange represents no evidence of a
 
 
 <p align="center">
-  <img src="https://i.imgur.com/HEn7zlG.png" alt="dendrogram1.png zoomed in. Colored components indicate matches" width="60%">
+  <img src="https://i.imgur.com/VEAXTDq.png" alt="dendrogram1.png zoomed in. Colored components indicate matches" width="60%">
   <br>
   <span style="font-size: 12px;"><code>dendrogram1.png</code> zoomed in. Colored components indicate matches</span>
 </p>
