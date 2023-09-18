@@ -92,15 +92,17 @@ In this chart, blue represents a match, while orange represents no evidence of a
 
 
 <figure style="text-align:center;">
-  <img src="https://i.imgur.com/HEn7zlG.png" width="60%" alt="dendrogram1.png zoomed in. Colored components indicate matches">
-  <figcaption><code>dendrogram1.png</code> zoomed in. Colored components indicate matches</figcaption>
+  <img src="https://i.imgur.com/HEn7zlG.png" width="60%" style="display: block; margin: auto;" alt="dendrogram1.png zoomed in. Colored components indicate matches">
+  <figcaption style="font-size: 0.8em;"><code>dendrogram1.png</code> zoomed in. Colored components indicate matches</figcaption>
 </figure>
 
 <br>
+
 <figure style="text-align:center;">
-  <img src="https://i.imgur.com/InUeNxk.png" width="60%" alt="Word cloud of the top 50 words in the PredictIt.org community">
-  <figcaption>Word cloud of the words in the PredictIt.org community, from <code>corpus</code></figcaption>
+  <img src="https://i.imgur.com/InUeNxk.png" width="60%" style="display: block; margin: auto;" alt="Word cloud of the top 50 words in the PredictIt.org community">
+  <figcaption style="font-size: 0.8em;">Word cloud of the words in the PredictIt.org community, from <code>corpus</code></figcaption>
 </figure>
+
 
 
 
