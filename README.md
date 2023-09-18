@@ -7,13 +7,14 @@
 This project investigates several methods of detecting users operating multiple accounts online. This project is written in Python, and uses pandas, NLTK, NumPy, scikit-plearn, SciPy, and matplotlib throughout.
 
 ## Features
-  
-- **Methods**
-  - Word Frequency: Created a corpus (collection of all words in over 400,000 comments), found the top 50 most frequently used words, and found the user frequency for each word
-  - Syntax Analysis: Created syntax based metrics, including average sentence length, frequency of long words, percent of sentences capitalized
-  - Temporal Analysis: Extracted the hour (0-23) of each post and created a dataframe of post frequency by hour
 
-- **Visualization**: Created dendrograms for each hierarchical clustering method. Check the `Dendrograms` folder for each. (Note: It may be difficult to see eacha image on a brwoser, as the files are very large. I recommend using GIMP or some other photo-editing software)
+- **Data extraction and preprocessing**: Extracted 400,000 Disqus comments through Disqus Web API (`API_Requests.py`). Normalized JSON objects, created new dataframes for features, cleaned comment data by removing HTML-like formatting tags, newline characters, and URLs.
+- Methods
+  - **Word Frequency**: Created a corpus (collection of all words in over 400,000 comments), found the top 50 most frequently used words, and found the user frequency for each word
+  - **Syntax Analysis**: Created syntax based metrics, including average sentence length, frequency of long words, percent of sentences capitalized
+  - **Temporal Analysis**: Extracted the hour (0-23) of each post and created a dataframe of post frequency by hour
+
+- **Visualizations**: Created dendrograms for each hierarchical clustering method. Check the `Dendrograms` folder for each. (Note: It may be difficult to see eacha image on a brwoser, as the files are very large. I recommend using GIMP or some other photo-editing software)
 
 
 
@@ -58,34 +59,34 @@ This project investigates several methods of detecting users operating multiple 
     <th>Accuracy<sup>1</sup></th>
   </tr>
   <tr>
-    <td>L1</td>
+    <td>C1</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✘</td>
     <td style="text-align:center">✘</td>
     <td rowspan="2" style="vertical-align:middle; text-align:center">93%</td>
   </tr>
   <tr>
-    <td>L2<sup>2</sup></td>
+    <td>C2<sup>2</sup></td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✘</td>
     <td style="text-align:center">✘</td>
   </tr>
   <tr>
-    <td>L3</td>
+    <td>C3</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✘</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">73%</td>
   </tr>
   <tr>
-    <td>L4</td>
+    <td>C4</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✘</td>
     <td style="text-align:center">73%</td>
   </tr>
   <tr>
-    <td>L5</td>
+    <td>C5</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✔</td>
     <td style="text-align:center">✔</td>
@@ -126,7 +127,7 @@ In this chart, blue represents a match, while orange represents no evidence of a
 <p align="center">
   <img src="https://i.imgur.com/InUeNxk.png" alt="Word cloud of the top 50 words in the PredictIt.org community" width="60%">
   <br>
-  <span style="font-size: 12px;">Word cloud of the words in the PredictIt.org community, from <code>corpus</code></span>
+  <span style="font-size: 12px;">Word cloud of PredictIt.org comments, from <code>corpus</code></span>
 </p>
 
 
