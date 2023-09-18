@@ -47,34 +47,58 @@ This project investigates several methods of detecting users operating multiple 
 
 ## Results 
 
+
+
 <table>
   <tr>
     <th>Method</th>
+    <th>Word Frequency</th>
+    <th>Syntax Analysis</th>
+    <th>Temporal Analysis</th>
     <th>Accuracy<sup>1</sup></th>
   </tr>
   <tr>
-    <td>Word Frequency (All Users)</td>
+    <td>L1</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✘</td>
+    <td style="text-align:center">✘</td>
     <td rowspan="2" style="vertical-align:middle; text-align:center">93%</td>
   </tr>
   <tr>
-    <td>Word Frequency (Active Users)</td>
+    <td>L2<sup>2</sup></td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✘</td>
+    <td style="text-align:center">✘</td>
   </tr>
   <tr>
-    <td>Word Frequency + Temporal Analysis</td>
+    <td>L3</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✘</td>
+    <td style="text-align:center">✔</td>
     <td style="text-align:center">73%</td>
   </tr>
   <tr>
-    <td>Word Frequency + Syntax Analysis</td>
+    <td>L4</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✘</td>
     <td style="text-align:center">73%</td>
   </tr>
   <tr>
-    <td>Word Frequency + Syntax Analysis + Temporal Analysis</td>
+    <td>L5</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✔</td>
+    <td style="text-align:center">✔</td>
     <td style="text-align:center">67%</td>
   </tr>
 </table>
 
 
+
+
 <sup>1</sup> - lower bound of the true positive identification rate, taken by obtaining the top 15 closest points in each clustering, and identifying the proportion of the matches that are known duplicate accounts. The accuracy could be even higher if it was later revealed a match was the same person.
+
+<sup>2</sup> - filtered dataset to only include active users
 
 **Sample Calculation**: Running `process_linkage(C1, LB1).head(15)` in `Dendrogram.py` yields the following table. It has been annotated to denote known alternate accounts:
 
