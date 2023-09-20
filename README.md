@@ -4,7 +4,7 @@
 
 ## Description
 
-This project investigates several methods of detecting users operating multiple accounts online. This project is written in Python, and uses pandas, NLTK, NumPy, scikit-plearn, SciPy, and matplotlib throughout.
+This project investigates several methods of detecting users operating multiple accounts online. This project is written in Python, and uses pandas, NLTK, NumPy, scikit-learn, SciPy, and matplotlib throughout.
 
 ## Features
 
@@ -14,7 +14,7 @@ This project investigates several methods of detecting users operating multiple 
   - **Syntax Analysis**: Created syntax based metrics, including average sentence length, frequency of long words, percent of sentences capitalized
   - **Temporal Analysis**: Extracted the hour (0-23) of each post and created a dataframe of post frequency by hour
 
-- **Visualizations**: Created dendrograms for each hierarchical clustering method. Check the `Dendrograms` folder for each. (Note: It may be difficult to see eacha image on a brwoser, as the files are very large. I recommend using GIMP or some other photo-editing software)
+- **Visualizations**: Created dendrograms for each hierarchical clustering method. Check the `Dendrograms` folder for each. (Note: It may be difficult to see each image on a browser, as the files are very large. I recommend using GIMP or some other photo-editing software)
 
 
 
